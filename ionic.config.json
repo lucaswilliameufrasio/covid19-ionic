@@ -1,0 +1,7 @@
+{
+  "name": "covid19info-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

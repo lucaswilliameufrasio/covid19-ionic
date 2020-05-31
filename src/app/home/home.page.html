@@ -1,0 +1,49 @@
+<!-- Brazil is from wikipedia: https://pt.wikipedia.org/wiki/Ficheiro:Flag_of_Brazil.svg -->
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title
+      size="medium"
+      >Covid19
+      <img
+        style="width: 30px; height: 20px; vertical-align: sub;"
+        src="assets/img/brazil-flag.png"
+    /></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <div class="updatedat">
+    <p>
+      Atualizado em:
+    </p>
+    <strong>{{response?.data?.updated_at | date: 'dd/MM/yyyy hh:MM' }}</strong>
+  </div>
+
+  <ion-card class="card-container">
+    <ion-card-header>
+      <ion-card-title class="card-title">Casos Confirmados</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="card-cases-confirmed">
+      {{ response?.data?.cases }}
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card-container">
+    <ion-card-header>
+      <ion-card-title class="card-title">Mortes</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="card-cases-deaths">
+      {{ response?.data?.deaths }}
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card-container">
+    <ion-card-header>
+      <ion-card-title class="card-title">Recuperados</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="card-cases-recovered">
+      {{ response?.data?.recovered }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

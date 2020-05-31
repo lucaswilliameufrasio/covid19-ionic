@@ -1,0 +1,33 @@
+.card-container {
+  height: 140px;
+  text-align: center;
+}
+
+.card-title {
+  color: grey;
+  font-size: 16px;
+}
+
+.card-cases-confirmed {
+  font-size: 40px;
+  color: grey;
+  font-weight: bold;
+}
+
+.card-cases-deaths {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-cases-recovered {
+  font-size: 40px;
+  color: lawngreen;
+  font-weight: bold;
+}
+
+.updatedat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
